@@ -4,9 +4,31 @@
 
 #Find the sum of all the multiples of 3 or 5 below 1000.
 
+curr_num = 1
 
-limit = 1000
-curr_num = 0
+list_nums = []
+
+
+while curr_num < 1000:
+  if curr_num % 3 == 0 or curr_num % 5 ==0:
+    list_nums.append(curr_num)
+  curr_num += 1
+
+#print(list_nums)
+
+result = 0
+for i in list_nums:
+  result += i
+
+
+print("The sum is: ") 
+print(result)
+
+
+
+### Longer slution gotten on the first try
+''' 
+curr_num = 1
 
 mult_3 = []
 mult_5 = []
@@ -31,4 +53,4 @@ for i in mult_5:
   result += i
 
 print("The sum is: ") 
-print(result)
+print(result) '''
